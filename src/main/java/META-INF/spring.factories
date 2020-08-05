@@ -1,0 +1,8 @@
+# 监听器
+org.springframework.context.ApplicationListener=top.takefly.boot.frame.listeners.StarterListener
+
+# 系统初始化器
+org.springframework.context.ApplicationContextInitializer=
+
+# 环境配置后置处理器
+org.springframework.boot.env.EnvironmentPostProcessor=top.takefly.boot.frame.processor.MyEnvironmentProcessor

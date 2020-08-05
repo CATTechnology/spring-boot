@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 980518
+    url: jdbc:mysql://218.78.84.3:3306/boot?useUnicode=true&useCharacterEncoding=utf8&useSSL=false
+
+  # jpa
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  #延时加载
+  main:
+    lazy-initialization: true
+my:
+  secret: ${random.value}
+  number: ${random.int}
+  bignumber: ${random.long}
+  uuid: ${random.uuid}
